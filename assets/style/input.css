@@ -1,0 +1,72 @@
+main{
+  display: flex;
+  flex-direction: row;
+}
+aside{
+  top: 76px;
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  box-sizing: border-box;
+  margin-right: 15px;
+  height: 91vh;
+  flex-basis: 15%;
+}
+aside h1{
+  color: #D3D3D3;
+  margin: 5px 0 0 0;
+}
+aside a{
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
+.content{
+  margin: 5px 2px 2px 2px;
+  padding: 15px;
+  box-shadow: 2px 5px 5px 2px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  flex-basis: 85%;
+  overflow: auto;
+}
+form{
+  padding-top: 5px;
+}
+form input{
+  margin-top: 15px;
+  width: 250px;
+  height: 30px;
+  font-size: 12pt;
+}
+form input[type=submit]{
+  text-align: center;
+  font-size: 15pt;
+  width: 258px;
+}
+.parent{
+  display: flex;
+  flex-direction: row;
+}
+.child{
+  flex-basis: 50%;
+}
+table{
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 1px solid black;
+}
+th{
+  height: 40px;
+}
+td{
+  height: 30px;
+  width: 100px;
+}
+td.namaBarang, th.namaBarang{
+  width: 300px;
+  text-align: center;
+}
+td.jumlahBarang{
+  text-align: center;
+}

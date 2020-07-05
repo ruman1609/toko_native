@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color: blue;
+}
+form{
+  text-align: center;
+  box-sizing: content-box;
+  background-color: white;
+  width: 500px;
+  margin:auto;
+  padding: 100px 0;
+}
+header{
+  text-align: center;
+  padding: 50px;
+}
+h1{
+  color: white;
+}
+input{
+  margin: 15px;
+}
