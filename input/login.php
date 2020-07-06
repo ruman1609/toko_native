@@ -10,6 +10,11 @@
     <header>
       <h1>LOGIN</h1>
     </header>
+    <?php
+    if(count($_GET)!=0){
+      if($_GET["fail"] == "true"){echo("<script>alert(\"Salah Password\")</script>");}
+    }
+    ?>
     <form action=<?php echo(htmlspecialchars("/toko_native/input/input.php")) ?> method="post">
       <input type="text" name="user" placeholder="Username"> <br>
       <input type="password" name="pass" placeholder="Password"> <br>

@@ -10,8 +10,14 @@
     exit();
   }
   elseif($_SERVER["REQUEST_METHOD"]=="POST"){
-    $_SESSION["user"] = $user = decrypt($_POST["user"]);
-    $_SESSION["pass"] = $pass = decrypt($_POST["pass"]);
+    if($_POST["user"] == "admin" && $_POST["pass"] == "admin"){
+      $_SESSION["user"] = $user = decrypt($_POST["user"]);
+      $_SESSION["pass"] = $pass = decrypt($_POST["pass"]);
+    }
+    else{
+      header("Location: /toko_native/input/login.php?fail=true");
+      exit;
+    }
   }
 ?>
 <!DOCTYPE html>
